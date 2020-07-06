@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">bitcoin-tracker</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="enter_email">enter email</string>
+    <string name="enter_password">enter password</string>
+    <string name="login">Login</string>
+
+    <string-array name="coinsArray">
+        <item>BTC</item>
+        <item>LTC</item>
+        <item>BCH</item>
+        <item>XRP</item>
+        <item>ETH</item>
+        <item>MBPRK01</item>
+        <item>MBPRK02</item>
+        <item>MBPRK03</item>
+        <item>MBPRK04</item>
+        <item>MBCONS01</item>
+        <item>USDC</item>
+    </string-array>
+</resources>
