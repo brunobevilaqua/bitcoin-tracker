@@ -1,6 +1,6 @@
 package com.example.bitcoin_tracker.dashboard.wallet
 
-class WalletDto private constructor(
+class WalletDto(
     val walletId: Long?,
     val userId: Long?,
     val walletTotalAmount: Long?,
@@ -14,7 +14,8 @@ class WalletDto private constructor(
     ) {
         fun walletId(walletId: Long) = apply { this.walletId = walletId }
         fun userId(userId: Long) = apply { this.userId = userId }
-        fun walletTotalAmount(walletTotalAmount: Long) = apply { this.walletTotalAmount = walletTotalAmount }
+        fun walletTotalAmount(walletTotalAmount: Long) =
+            apply { this.walletTotalAmount = walletTotalAmount }
         fun coins(coins: List<WalletCoinAmount>) = apply { this.coins = coins }
         fun build() = WalletDto(walletId, userId, walletTotalAmount, coins)
     }

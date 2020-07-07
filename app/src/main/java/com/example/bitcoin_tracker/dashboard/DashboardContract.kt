@@ -10,7 +10,7 @@ interface DashboardContract {
     }
 
     interface Presenter {
-        fun getWalletByUserId(userId: Long): WalletDto
+        fun getWallet(userId: Long): WalletDto
         fun addNewCoinToWallet(walletId: Long, coin: CoinEnum)
         fun addCoinQuantityToWallet(coin: CoinEnum, quantity: Int, walletId: Long)
     }

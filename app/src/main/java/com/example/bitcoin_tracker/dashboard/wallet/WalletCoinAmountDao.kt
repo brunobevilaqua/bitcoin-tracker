@@ -14,5 +14,5 @@ interface WalletCoinAmountDao {
     fun update(walletCoinAmount: WalletCoinAmount)
 
     @Query("SELECT * from walletcoinamount WHERE WALLET_ID= :walletId")
-    fun getWalletCoinAmountByWalletId(walletId: Long): WalletCoinAmount
+    fun getWalletCoinAmountByWalletId(walletId: Long): List<WalletCoinAmount>
 }

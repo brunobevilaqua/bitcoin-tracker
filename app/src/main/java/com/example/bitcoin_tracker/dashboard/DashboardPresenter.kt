@@ -13,7 +13,7 @@ class DashboardPresenter : Presenter {
         this.walletCoinAmountDao = database.walletCoinAmoutDao()
     }
 
-    override fun getWalletByUserId(userId: Long): WalletDto {
+    override fun getWallet(userId: Long): WalletDto {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
@@ -25,11 +25,8 @@ class DashboardPresenter : Presenter {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
-    private fun getWallet(userId: Long): Wallet? {
-        return walletDao?.getWalletByUserId(userId)
-    }
+//    private fun createWalletDto(userId: Long): WalletDto {
+//
+//    }
 
-    private fun getWalletCoinAmountByWalletId(walletId: Long): WalletCoinAmount? {
-        return walletCoinAmountDao?.getWalletCoinAmountByWalletId(walletId)
-    }
 }
